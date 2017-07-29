@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Water Drops</title>
+</head>
+<body>
+	<div id="parameters">
+		<h1>Layout</h1>
+ 		<p>
+			<label class="field" for="dish_height">Dish height [<em>mm</em>]:</label>
+			<input id="dish_height" type ="input" value="6"/>
+		</p>	      
+ 		<p>
+			<label class="field" for="travel_feedrate">Travel feedrate [<em>mm/min</em>]:</label>
+			<input id="travel_feedrate" type ="input" value="6000"/>
+		</p>
+    <p>
+			<label class="field" for="travel_z_lift">Travel Z lift [<em>mm</em>]:</label>
+			<input id="travel_z_lift" type ="input" value="5"/>
+		</p>
+    
+		<h1>Drops</h1>
+		<p>
+			<label class="field" for="drops_per_side">Drops per side:</label>
+			<input id="drops_per_side" type ="input" value="3"/>
+		</p>
+		<p>
+			<label class="field" for="distance_between_drops">Distance between drops [<em>mm</em>]:</label>
+			<input id="distance_between_drops" type ="input" value="7"/>
+		</p>	
+		<p>
+			<label class="field" for="drop_printing_initial_height">Drop initial printing height [<em>mm</em>]:</label>
+			<input id="drop_printing_initial_height" type ="input" value="1"/>
+		</p>	
+		<p>
+			<label class="field" for="drop_printing_final_height">Drop final printing height [<em>mm</em>]:</label>
+			<input id="drop_printing_final_height" type ="input" value="5"/>
+		</p>	
+		<p>
+			<label class="field" for="drop_feedrate">Printing drop feedrate [<em>mm/min</em>]:</label>
+			<input id="drop_feedrate" type ="input" value="100"/>
+		</p>
+		<p>
+			<label class="field" for="drop_extrusion">Drop extrusion [<em>mm/min</em>]:</label>
+			<input id="drop_extrusion" type ="input" value="0.5"/>
+		</p>	
+		<p>
+			<label class="field" for="drop_retraction">Printing drop retraction [<em>mm/min</em>]:</label>
+			<input id="drop_retraction" type ="input" value="0.25"/>
+		</p>	
+    
+		<p>
+			<button id="gcode" onclick="createFile();">GCode</button>
+		</p>
+
+	</div>
+
+	<script type="text/javascript" src="js/water-drops.js"></script>
+	<script type="text/javascript" src="js/FileSaver.js"></script>
+	
+</body>
+</html>
